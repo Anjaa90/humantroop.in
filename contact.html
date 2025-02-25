@@ -329,40 +329,126 @@
 
 
         <!-- contact-info-section -->
-        <section class="contact-info-section">
-            <div class="auto-container">
-                <div class="row clearfix">
-                    <div class="col-lg-4 col-md-6 col-sm-12 info-column p-2">
-                        <div class="single-info-box shadow p-4 rounded text-center bg-white h-100 d-flex flex-column justify-content-center">
-                            <div class="inner-box">
-                                <div class="icon-box mb-3"><i class="flaticon-email"></i></div>
-                                <p><a href="mailto:needhelp@example.com">support@humantroop.in</a></p>
+        <section class="contact-info-section py-5" style="background-color: #fcf9f9;">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Email -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="info-card text-center bg-white p-4 rounded-3 shadow-sm">
+                            <div class="icon-box mb-3 text-success">
+                                <i class="flaticon-email fs-2"></i>
                             </div>
+                            <p class="mb-0">
+                                <a href="mailto:support@humantroop.in" 
+                                   class="text-dark fw-bold text-decoration-none"
+                                   onclick="window.location.href='mailto:support@humantroop.in'; return false;">
+                                    support@humantroop.in
+                                </a>
+                            </p>
+                            <br><br><br>
+                            
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 info-column p-2">
-                        <div class="single-info-box shadow p-4 rounded text-center bg-white h-100 d-flex flex-column justify-content-center">
-                            <div class="inner-box">
-                                <div class="icon-box mb-3"><i class="flaticon-telephone"></i></div>
-                                <p><a href="tel:+919137655589">+919137655589</a></p>
+        
+                    <!-- Phone -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="info-card text-center bg-white p-4 rounded-3 shadow-sm">
+                            <div class="icon-box mb-3 text-success">
+                                <i class="flaticon-telephone fs-2"></i>
                             </div>
+                            <p class="mb-0">
+                                <a href="tel:+919137655589" class="text-dark fw-bold text-decoration-none">
+                                    +91 91376 55589
+                                </a>
+                            </p><br><br><br>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 info-column p-2">
-                        <div class="single-info-box shadow p-4 rounded text-center bg-white h-100 d-flex flex-column justify-content-center">
-                            <div class="inner-box">
-                                <div class="icon-box mt-5"><i class="flaticon-pin"></i></div>
-                                <p>HumanTroop Ventures
-                                    <br>
-                                    Office F-09, Nano Wing, Vashi Fantasia Business Park, Sector 30A, Vashi, Navi Mumbai 400703
-                                </p>
+        
+                    <!-- Address -->
+                    <div class="col-lg-4 col-md-6 mx-auto">
+                        <div class="info-card text-center bg-white p-4 rounded-3 shadow-sm">
+                            <div class="icon-box mb-3 text-success">
+                                <i class="flaticon-pin fs-2"></i>
                             </div>
+                            <p class="mb-0 fw-light" style="font-size: 14px; color: #313131;">
+                                HumanTroop Ventures <br>
+                                Office F-09, Nano Wing, Vashi Fantasia Business Park, <br>
+                                Sector 30A, Vashi, Navi Mumbai 400703
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         
+        <style>/* Contact Section Styling */
+            .contact-info-section {
+                padding: 60px 20px;
+                background-color: #121212;
+                text-align: center;
+            }
+            
+            .contact-container {
+                max-width: 1100px;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+            }
+            
+            .info-card {
+                background: #1e1e1e;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                width: 300px;
+                text-align: center;
+            }
+            
+            .info-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
+            }
+            
+            /* Icon Styling */
+            .icon-box {
+                font-size: 2rem;
+                margin-bottom: 15px;
+                border-radius: 50%;
+                background-color:#eee8e8;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60px;
+                height: 60px;
+                margin: 0 auto 15px;
+            }
+            
+            
+            
+            .icon-email i, .icon-phone i, .icon-location i { 
+                color: #fdfdfd !important;
+            }
+            
+            /* Text Styling */
+            .info-text {
+                font-size: 16px;
+                font-weight: bold;
+            }
+            
+            .info-text a {
+                text-decoration: none;
+                color: #fff;
+                transition: color 0.3s;
+            }
+            
+            .info-text a:hover {
+                color: #28aa4a;
+            }
+            
+        </style>
         
         
         <!-- contact-info-section end -->
